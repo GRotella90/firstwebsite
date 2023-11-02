@@ -1,0 +1,121 @@
+html {background-color: black;}
+
+h1 {
+    text-align: center;
+color: white;}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+li {
+    color: white;
+    text-align: center;
+}
+
+p {color: white;
+text-align:center;}
+
+a {
+    text-decoration: none; /* Removes the underline from anchor elements */
+    color: white; /* Sets the color of the link text */
+}
+
+a:hover {
+    font-size: 120%; /* Increase font size by 20% when the cursor hovers over the anchor */
+}
+.image {
+    margin: 0 auto; 
+    display: block;
+    width: 80%; /* Responsive width for images */
+    max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.h1special {font-size: 60px;}
+.h2special {font-size: 50px;}
+.pspecial {font-size: 2rem;}
+    
+#G1 {
+    width: 400px;
+    height: 300px; 
+    display: block;
+    margin: 0 auto;
+}
+
+    #V1 {
+        width: 500px;
+        height: 400px; 
+        display: block;
+        margin: 0 auto;}
+    
+
+    .container {
+        display: flex;
+        gap: 10px;
+       align-items: center;
+       justify-content: center;
+       margin-top: 30px;
+
+ 
+    }
+
+    .container2 {
+        display: flex;
+        gap: 10px;
+       align-items: center;
+       justify-content: center;
+    
+ 
+    }
+    
+.divline {
+    background-color: red;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.video {    display: block;
+    margin: 0 auto;
+width: 600px;
+height: 400px;}
+
+.verginadanzantepic {
+    height: 400px;
+    width: 400px;
+}
+
+
+/* Media query for smaller screens (mobile phones) */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .container, .container2 {
+        flex-direction: column; /* Stacks elements vertically on smaller screens */
+        gap: 20px; /* Increased gap between elements for better touch interaction */
+        align-items: center; /* Center-align items vertically */
+        justify-content: space-around; /* Distributes items evenly along the cross-axis */
+    }
+    .image {
+        width: 100%; /* Adjust image width to fit smaller screens */
+    }
+    .video, .verginadanzantepic {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+    h1, h2, h3, h4, p, li {
+        text-align: center; /* Maintain centered text alignment */
+    }
+    #G1, #V1 {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust proportionally */
+    }
+}
